@@ -5,11 +5,14 @@ const mongoose = require("mongoose");
 const subscriberSchema = new mongoose.Schema({
   email: {
     type: String,
-    required:true
+    required:true,
+    unique:true
   },
   address: {
     type: String,
-    required:true
+    required:true,
+    unique:true
+
   },
 
 });
